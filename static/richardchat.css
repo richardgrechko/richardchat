@@ -1,6 +1,6 @@
 @font-face{
-    font-family:Michroma;
-    src:url(fonts/Michroma-Regular.ttf);
+	font-family:Michroma;
+	src:url(fonts/Michroma-Regular.ttf);
 }
 *{
 	font-family:Michroma;
