@@ -6,6 +6,10 @@
 	font-family:Michroma Regular;
 	-webkit-tap-highlight-color:transparent
 }
+handle {
+	color: #808080;
+	font-size: 8px;
+}
 html {
 	background-color: rgb(128,128,128);
 }
