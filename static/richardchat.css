@@ -48,3 +48,8 @@ img {
 	display: flex;
 	justify-content: stretch;
 }
+.button {
+	cursor: pointer;
+	transition: all .1s;
+	user-select: none;
+}
