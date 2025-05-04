@@ -6,12 +6,15 @@
 	font-family:Michroma Regular;
 	-webkit-tap-highlight-color:transparent
 }
+img {
+	overflow-clip-margin: content-box;
+	overflow: clip;
+}
 #ui {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(30, 30, 30, .2);
 	border-radius: 0 0 0 5px;
-	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	pointer-events: auto;
@@ -32,6 +35,14 @@
 	width: 100%;
 	background-color: rgba(255, 255, 255, .8);
 	user-select: none;
+}
+#sendmsg {
+	margin: 5px;
+	background-color: rgb(168 171 255 / 40%);
+	border-radius: 5px;
+	width: 20px;
+	padding: 5px;
+	margin: 5px 0 0 5px;
 }
 .msgcontainer {
 	display: flex;
