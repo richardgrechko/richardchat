@@ -17,3 +17,11 @@ function addMessage(username,handle,message,registered) {
 	paragraph.appendChild(document.createTextNode(": "));
 	paragraph.appendChild(message);
 }
+document.getElementById("sendmsg").addEventListener("click", function (e) {
+	var rateLimit = performance.now()
+	var chatMessage = document.getElementById("chatmsg");
+	rateLimit + 300 > performance.now() ? (chatMessage.value = "") : send(chatMessage.value.substr(0, 400)),
+	rateLimit = performance.now();
+	chatMessage.value = "";
+	chatMessage.focus();
+})
