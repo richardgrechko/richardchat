@@ -1,4 +1,8 @@
+@font-face{
+    font-family:Michroma;
+    src:url(fonts/Michroma-Regular.ttf);
+}
 *{
-	font-family:ubuntu mono,monospace,courier new,Courier,special;
+	font-family:Michroma;
 	-webkit-tap-highlight-color:transparent
 }
