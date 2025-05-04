@@ -6,6 +6,15 @@
 	font-family:Michroma Regular;
 	-webkit-tap-highlight-color:transparent
 }
+#ui {
+	width: 200px;
+	background-color: rgba(30, 30, 30, .2);
+	border-radius: 0 0 0 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	pointer-events: auto;
+}
 #chatbox {
 	background-color: #ffffff;
 	border-radius: 5px;
@@ -22,4 +31,8 @@
 	width: 100%;
 	background-color: rgba(255, 255, 255, .8);
 	user-select: none;
+}
+.msgcontainer {
+	display: flex;
+	justify-content: stretch;
 }
