@@ -3,7 +3,8 @@ var system = {
 	handle: "N/A"
 }
 var userMessages = [];
-function addMessage(username,handle,message,registered) {
+function addMessage(username,handle,message) {
+	var msg = [username,handle,message];
 	var chatbox = document.getElementById("chatbox"),
 		paragraph = document.createElement("p"),
 		user = document.createElement("user"),
@@ -16,6 +17,10 @@ function addMessage(username,handle,message,registered) {
 	paragraph.appendChild(user);
 	paragraph.appendChild(document.createTextNode(": "));
 	paragraph.appendChild(message);
+	return msg
+}
+function send(msg) {
+	addMessage(system.username,system.handle,msg)
 }
 document.getElementById("sendmsg").addEventListener("click", function (e) {
 	var rateLimit = performance.now()
