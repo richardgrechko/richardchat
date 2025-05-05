@@ -10,9 +10,9 @@ function addMessage(username,handle,message) {
 		user = document.getElementById("user"),
 		handle = document.getElementById("handle"),
 		msgElement = document.getElementById("msg");
-	user.innerText = username;
-	handle.innerText = "(" + handle + ")";
-	msgElement.innerText = message;
+	user.innerHTML = username;
+	handle.innerHTML = "(" + handle + ")";
+	msgElement.innerHTML = message;
 	paragraph.appendChild(document.createTextNode(handle));
 	paragraph.appendChild(document.createTextNode(user));
 	paragraph.appendChild(document.createTextNode(": "));
