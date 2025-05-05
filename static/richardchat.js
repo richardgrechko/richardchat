@@ -15,7 +15,7 @@ function addMessage(username,handle,message) {
 	msgElement.innerText = message;
 	paragraph.appendChild(handleElement);
 	paragraph.appendChild(user);
-	paragraph.appendChild(": ");
+	paragraph.appendChild(document.createTextNode(": "));
 	paragraph.appendChild(msgElement);
 	chatbox.appendChild(paragraph);
 	console.log(user)
