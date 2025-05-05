@@ -5,7 +5,11 @@
 </head>
 <body>
 	<div id="ui">
-		<div id="usermenu"></div>
+		<div id="usermenu">
+			<input id="claimusername" type="text" autocomplete="username" maxlength="50" minlength="1" style="display: block">
+			<input id="changeusername" type="text" autocomplete="username" maxlength="50" minlength="1" style="display: none">
+			<input id="changehandle" type="text" autocomplete="username" maxlength="50" minlength="1" style="display: none">
+		</div>
 		<div id="chatbox">Welcome to RichardChat. You may notice some issues.<hr></div>
 		<div class="msgcontainer">
 			<input maxlength="400" type="text" title="Enter a message here." id="chatmsg" placeholder="Enter a message here."></input>
