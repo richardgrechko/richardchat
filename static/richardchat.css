@@ -21,10 +21,9 @@ img {
 	background-color: rgba(30, 30, 30, .5);
 	color: #fff;
 	position: absolute;
-	right: 100%;
-	transform: translateX(-105%);
+	right: 0%;
+	transform: translateX(-3.1%);
 	padding: 5px;
-	margin-top: 10px;
 	border-radius: 5px 5px 5px 5px;
 	pointer-events: auto;
 	transition: all .5s;
