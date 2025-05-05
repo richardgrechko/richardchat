@@ -7,12 +7,12 @@ function addMessage(username,handle,message) {
 	var msg = [username,handle,message];
 	var chatbox = document.getElementById("chatbox"),
 		paragraph = document.createElement("p"),
-		user = document.getElementById("user"),
-		handle = document.getElementById("handle"),
-		msgElement = document.getElementById("msg");
-	user.innerHTML = username;
-	handle.innerHTML = "(" + handle + ")";
-	msgElement.innerHTML = message;
+		user = document.createElement("user"),
+		handle = document.createElement("handle"),
+		msgElement = document.createElement("msg");
+	user.innerText = username;
+	handle.innerText = "(" + handle + ")";
+	msgElement.innerText = message;
 	paragraph.appendChild(document.createTextNode(handle));
 	paragraph.appendChild(document.createTextNode(user));
 	paragraph.appendChild(document.createTextNode(": "));
