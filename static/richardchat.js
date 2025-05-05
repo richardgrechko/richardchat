@@ -37,3 +37,10 @@ document.getElementById("sendmsg").addEventListener("click", function (e) {
 	chatMessage.value = "";
 	chatMessage.focus();
 })
+document.getElementById("sendmsg").addEventListener("click", function (e) {
+	var chatMessage = document.getElementById("chatmsg");
+	rateLimit + 300 > Date.now() ? (chatMessage.value = "") : send(chatMessage.value.substr(0, 400)),
+	rateLimit = Date.now();
+	chatMessage.value = "";
+	chatMessage.focus();
+})
