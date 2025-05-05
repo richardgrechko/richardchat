@@ -10,10 +10,6 @@ handle {
 	color: #808080;
 	font-size: 8px;
 }
-user, msg {
-	color: #181830;
-	font-size: 13px;
-}
 html {
 	background-color: rgb(128,128,128);
 }
