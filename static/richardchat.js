@@ -13,7 +13,10 @@ function addMessage(username,handle,message) {
 	user.innerText = username;
 	handleElement.innerText = "(" + handle + ")";
 	msgElement.innerText = message;
-	paragraph.appendChild(handleElement);
+	if (username != handle) {
+		paragraph.appendChild(handleElement);
+		paragraph.appendChild(document.createTextNode(" "));
+	}
 	paragraph.appendChild(user);
 	paragraph.appendChild(document.createTextNode(": "));
 	paragraph.appendChild(msgElement);
