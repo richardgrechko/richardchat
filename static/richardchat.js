@@ -40,4 +40,10 @@ document.getElementById("sendmsg").addEventListener("click", function (e) {
 document.getElementById("claimusernamebutton").addEventListener("click", function (e) {
 	system.username = e;
 	system.handle = e;
+	document.getElementById("claimusername").style = "display: none"
+	document.getElementById("claimusernamebutton").style = "display: none"
+	document.getElementById("changeusername").style = "display: block"
+	document.getElementById("submitnamechange").style = "display: block"
+	document.getElementById("changehandle").style = "display: block"
+	document.getElementById("submithandlechange").style = "display: block"
 })
