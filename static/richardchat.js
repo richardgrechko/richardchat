@@ -8,16 +8,17 @@ function addMessage(username,handle,message) {
 	var chatbox = document.getElementById("chatbox"),
 		paragraph = document.createElement("p"),
 		user = document.createElement("user"),
-		handle = document.createElement("handle"),
+		handleElement = document.createElement("handle"),
 		msgElement = document.createElement("msg");
 	user.innerText = username;
-	handle.innerText = "(" + handle + ")";
+	handleElement.innerText = "(" + handle + ")";
 	msgElement.innerText = message;
-	paragraph.appendChild(document.createTextNode(handle));
+	paragraph.appendChild(document.createTextNode(handleElement));
 	paragraph.appendChild(document.createTextNode(user));
 	paragraph.appendChild(document.createTextNode(": "));
 	paragraph.appendChild(document.createTextNode(msgElement));
 	chatbox.appendChild(paragraph);
+	console.log(user)
 	return msg
 }
 function send(msg) {
