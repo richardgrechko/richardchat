@@ -13,10 +13,10 @@ function addMessage(username,handle,message) {
 	user.innerText = username;
 	handle.innerText = "(" + handle + ")";
 	msgElement.innerText = message;
-	paragraph.appendChild(handle);
-	paragraph.appendChild(user);
+	paragraph.appendChild(document.createTextNode(handle));
+	paragraph.appendChild(document.createTextNode(user));
 	paragraph.appendChild(document.createTextNode(": "));
-	paragraph.appendChild(message);
+	paragraph.appendChild(document.createTextNode(msgElement));
 	chatbox.appendChild(paragraph);
 	return msg
 }
