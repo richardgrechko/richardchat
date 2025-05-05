@@ -22,6 +22,7 @@ img {
 	color: #fff;
 	position: absolute;
 	right: 100%;
+	transform: translateX(-105%);
 	padding: 5px;
 	margin-top: 10px;
 	border-radius: 5px 5px 5px 5px;
